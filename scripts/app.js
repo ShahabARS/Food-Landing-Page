@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.querySelector(".hamburger-menu");
   const mobileMenu = document.querySelector(".mobile-menu");
   const mobileDropdownBtn = document.querySelector(".profile-container");
-  const mobileDropdown = document.querySelector(".profile-dropdown");
-  const profileContent = document.querySelector(".profile-content");
+  const profileMenu = document.querySelector(".profile-menu");
+  const dropdownMenu = document.querySelector(".dropdown-menu");
 
   menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle("hamburger-menu--active");
@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   mobileDropdownBtn.addEventListener("click", () => {
     mobileDropdownBtn.classList.toggle("profile-container--open");
-    profileContent.classList.toggle("profile-content--open");
+  });
+
+  profileMenu.addEventListener("click", () => {
+    profileMenu.classList.toggle("profile-menu--open");
   });
 });
