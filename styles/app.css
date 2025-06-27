@@ -5,11 +5,16 @@
   --regular-font: "Poppins-Regular", sans-serif, arial, helvetica;
   --light-font: "Poppins-Light", sans-serif, arial, helvetica;
   --thin-font: "Poppins-Thin", sans-serif, arial, helvetica;
+  --ArtyClick-Cool-Red: #fe043c;
+  --Very-Light-Pink: #fff5ec;
+  --White: #fff;
+  --Meteorite: #2E266F;
+  --Smokey-Grey:#707070;
 }
 
 body {
   font-family: var(--regluar-font);
-  background-color: #fff5ec;
+  background-color: var(--Very-Light-Pink);
   overflow-x: hidden;
 }
 
@@ -50,7 +55,7 @@ body {
 
 .mobile-menu__item {
   position: relative;
-  color: #fff;
+  color: var(--White);
   font-family: var(--medium-font);
   padding: 1.6rem;
   text-align: center;
@@ -67,7 +72,7 @@ body {
   width: 0;
   height: 0;
   border-radius: 4rem;
-  background-color: #fff;
+  background-color:var(--White);
   transition: width 0.3s ease, height 0.3s ease, transform 0.6s ease;
 }
 
@@ -92,7 +97,7 @@ body {
   overflow: hidden;
   max-height: 6.6rem;
   width: 18rem;
-  color: #fff;
+  color: var(--White);
   transition: max-height 0.3s ease-in, background-color 0.3s ease-in,
     color 0.3s ease-in;
   cursor: pointer;
@@ -104,15 +109,15 @@ body {
   position: absolute;
   width: 100%;
   height: 0.3rem;
-  background-color: #fe043c;
+  background-color: var(--ArtyClick-Cool-Red);
   border-radius: 5rem;
   bottom: 0;
 }
 
 .profile-container--open {
   max-height: 29rem;
-  background: #fff;
-  color: #fe043c;
+  background: var(--White);
+  color: var(--red);
 }
 
 .profile-content {
@@ -132,7 +137,7 @@ body {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  border: solid 0.3rem #fff;
+  border: solid 0.3rem var(--White);
 }
 
 .profile-content__name {
@@ -153,7 +158,7 @@ body {
 }
 
 .profile-container--open .profile-container::before {
-  border-bottom: solid 0.3rem #fe043c;
+  border-bottom: solid 0.3rem var(--ArtyClick-Cool-Red);
 }
 
 .profile-container--open .profile-content__icon {
@@ -161,7 +166,7 @@ body {
 }
 
 .profile-container--open .profile-content__img {
-  border-color: #fe043c;
+  border-color: var(--ArtyClick-Cool-Red);
 }
 
 .profile-dropdown__list {
@@ -207,7 +212,7 @@ body {
 .logo__icon {
   width: 100%;
   height: 100%;
-  fill: #fe043c;
+  fill: var(--ArtyClick-Cool-Red);
 }
 
 .nav {
@@ -243,7 +248,7 @@ body {
   display: inline-block;
   width: 75%;
   height: 0.32rem;
-  background-color: #fe043c;
+  background-color: var(--ArtyClick-Cool-Red);
   border-radius: 5rem;
   transition: width 0.7s ease;
 }
@@ -264,10 +269,10 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   border-radius: 1rem 1rem 0 0;
-  color: #fff5ec;
+  color: var(--Very-Light-Pink);
   transition: all 0.3s ease-in;
   cursor: pointer;
-  fill: #fff5ec;
+  fill: var(--Very-Light-Pink);
   z-index: 3;
 }
 
@@ -297,7 +302,7 @@ body {
   border-radius: 50%;
   aspect-ratio: 1/1;
   object-fit: cover;
-  border: #fff5ec solid 0.3rem;
+  border: var(--Very-Light-Pink) solid 0.3rem;
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -316,7 +321,7 @@ body {
 .menu__item {
   overflow: hidden;
   padding: 1rem 2rem;
-  color: #2e266f;
+  color: var(--Meteorite);
   font-family: var(--bold-font);
   z-index: 3;
 }
@@ -330,7 +335,7 @@ body {
   position: absolute;
   content: attr(data-hover);
   text-align: center;
-  color: #fe043c;
+  color: var(--ArtyClick-Cool-Red);
   width: 100%;
   top: 120%;
   left: 50%;
@@ -342,7 +347,7 @@ body {
   content: "";
   width: 100%;
   height: 0.3rem;
-  background-color: #fe043c;
+  background-color: var(--ArtyClick-Cool-Red);
   border-radius: 10rem;
   top: 240%;
   left: 50%;
@@ -360,6 +365,7 @@ body {
 .discover {
   position: relative;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .discover-content {
@@ -380,7 +386,7 @@ body {
   font-weight: 700;
   line-height: 1;
   font-size: clamp(5.4rem, 3.5015rem + 10.8484vw, 13.6719rem);
-  color: #f0e4df;
+  color: var(--Very-Light-Pink);
 }
 
 .main-content__title {
@@ -388,7 +394,7 @@ body {
   font-weight: 700;
   line-height: 1;
   font-size: clamp(3rem, 2.5vw, 10rem);
-  color: #2e266f;
+  color: var(--Meteorite);
 }
 
 .discover-content__input {
@@ -417,8 +423,8 @@ body {
   transform: translateY(-50%);
   width: 10rem;
   height: 4rem;
-  background-color: #db0030;
-  color: #fff5ec;
+  background-color: var(--ArtyClick-Cool-Red);
+  color: var(--Very-Light-Pink);
   font-family: var(--medium-font);
   font-weight: 600;
   font-size: 1.2rem;
@@ -436,16 +442,34 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .discover-view__wrapper {
+  position: relative;
   width: clamp(100%, 100%, 100%);
-  height: 28rem;
+  height: 34rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
-  background-color: #db0030;
+  background-color: var(--ArtyClick-Cool-Red);
+  z-index: -1;
+}
+
+.discover-view-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.discover-view__icon {
+  width: 6rem !important;
+  height: 6rem !important;
 }
 
 .transparent {
@@ -487,10 +511,10 @@ body {
 .discover-view__link {
   position: absolute;
   width: fit-content;
-  bottom: 6rem;
+  bottom: 4rem;
   left: 0;
-  background-color: #fff;
-  color: #fe043c;
+  background-color:var(--White);
+  color: var(--ArtyClick-Cool-Red);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -503,5 +527,33 @@ body {
 .discover-view__link svg {
   width: 3rem;
   height: 3rem;
-  fill: #fe043c;
+  fill: var(--ArtyClick-Cool-Red);
+}
+
+.offer-restaurant {
+}
+
+.offer-restaurant__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding-inline: 1.8rem;
+}
+
+.offer-restaurant__title {
+  font-family: var(--bold-font);
+  font-size: 2.2rem;
+  color: var(--Meteorite);
+  padding-left: 1rem;
+  border-left: solid clamp(.5rem, .6dvw, .8rem) var(--ArtyClick-Cool-Red);
+}
+
+.offer-restaurant__description {
+  text-indent: 1rem;
+  font-family: var(--regular-font);
+  font-size: 1.6rem;
+  color: var(--Smokey-Grey);
 }

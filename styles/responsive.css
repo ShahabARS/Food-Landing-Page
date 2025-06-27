@@ -14,11 +14,19 @@
   .transparent {
     height: 20rem;
   }
+
+  .discover-view-container {
+    bottom: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
   .hamburger-menu__line {
     background-color: #fff5ec;
+  }
+
+  .discover {
+    margin-bottom: 24rem;
   }
 
   .discover-content {
@@ -35,9 +43,8 @@
     flex-direction: row;
     top: 0;
     right: 0;
-    height: 85rem;
+    height: 100rem;
     transform: translateY(-30%);
-    overflow: hidden;
   }
 
   .discover-view__wrapper {
@@ -46,6 +53,10 @@
     height: 85rem;
     margin-bottom: -15rem;
     width: 50%;
+  }
+
+  .discover-view-container {
+    display: flex;
   }
 
   .transparent {
@@ -67,6 +78,7 @@
   }
 
   .discover-view__link {
+    bottom: 0;
     background-color: #fe043c;
     width: 28rem;
     color: #fff;
@@ -74,6 +86,14 @@
 
   .discover-view__link svg {
     fill: #fff;
+  }
+
+  .offer-restaurant__title {
+    font-size: 2.6rem;
+  }
+
+  .offer-restaurant__description {
+    font-size: 1.7rem;
   }
 }
 
@@ -161,7 +181,13 @@
 }
 
 @media (min-width: 1200px) {
+  .discover-view-container {
+    bottom: 7rem;
+  }
 }
 
 @media (min-width: 1400px) {
+  .discover-view-container {
+    bottom: 9rem;
+  }
 }
