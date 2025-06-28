@@ -1,3 +1,17 @@
+:root {
+  --black-font: "Poppins-Black", sans-serif, arial, helvetica;
+  --bold-font: "Poppins-Bold", sans-serif, arial, helvetica;
+  --medium-font: "Poppins-Medium", sans-serif, arial, helvetica;
+  --regular-font: "Poppins-Regular", sans-serif, arial, helvetica;
+  --light-font: "Poppins-Light", sans-serif, arial, helvetica;
+  --thin-font: "Poppins-Thin", sans-serif, arial, helvetica;
+  --ArtyClick-Cool-Red: #fe043c;
+  --Very-Light-Pink: #fff5ec;
+  --White: #fff;
+  --Meteorite: #2E266F;
+  --Smokey-Grey:#707070;
+}
+
 @media (min-width: 320px) {
 }
 
@@ -22,7 +36,7 @@
 
 @media (min-width: 768px) {
   .hamburger-menu__line {
-    background-color: #fff5ec;
+    background-color: ;
   }
 
   .discover {
@@ -79,13 +93,13 @@
 
   .discover-view__link {
     bottom: 0;
-    background-color: #fe043c;
+    background-color: var(--ArtyClick-Cool-Red);
     width: 28rem;
-    color: #fff;
+    color: var(--White);
   }
 
   .discover-view__link svg {
-    fill: #fff;
+    fill: var(--White);
   }
 
   .offer-restaurant__title {
@@ -138,8 +152,8 @@
   }
 
   .profile-menu--open {
-    background-color: #fff;
-    color: #fe043c;
+    background-color: var(--White);
+    color: var(--ArtyClick-Cool-Red);
     font-family: var(--medium-font);
   }
 
@@ -154,7 +168,7 @@
   }
 
   .profile-menu--open .userprofile {
-    border-color: #fe043c;
+    border-color: var(--ArtyClick-Cool-Red);
   }
 
   .dropdown-menu__item {
@@ -163,8 +177,8 @@
   }
 
   .dropdown-menu__item:hover {
-    background-color: #fe043c;
-    color: #fff;
+    background-color: var(--ArtyClick-Cool-Red);
+    color: var(--White);
   }
 
   .dropdown-menu__item:hover .dropdown-menu__link {
