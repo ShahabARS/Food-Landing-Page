@@ -531,6 +531,7 @@ body {
 }
 
 .offer-restaurant {
+  margin-bottom: 4rem;
 }
 
 .offer-restaurant__header {
@@ -572,7 +573,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  width: 8.4rem;
+  width: fit-content;
 }
 
 .offer-link__icon {
@@ -604,6 +605,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 2rem;
+  font-family: var(--regular-font);
   color: var(--ArtyClick-Cool-Red);
 }
 
@@ -648,17 +650,22 @@ body {
   width: 100%;
   height: fit-content;
   padding: 1.2rem;
+  color: var(--White);
   background-color: #fe043aa7;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .offer-box__title {
   font-family: var(--bold-font);
   font-size: 2.6rem;
-  color: var(--White);
+  color: inherit;
+  transition: all 0.3s ease;
 }
 
 .offer-box__caption {
-  color: var(--White);
+  transition: all 0.3s ease;
+  color: inherit;
   font-family: var(--light-font);
   padding-bottom: 1rem;
 }
@@ -680,7 +687,16 @@ body {
   background-color: var(--White);
   font-family: var(--bold-font);
   color: var(--ArtyClick-Cool-Red);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+.offer-box__contents:hover .offer-box-btn {
+  background-color: var(--ArtyClick-Cool-Red);
+  color: var(--White);
+}
+
+.offer-box__contents:hover .offer-box-btn > svg {
+  fill: var(--White);
 }
 
 .offer-box-btn > svg {
@@ -689,8 +705,17 @@ body {
   fill: var(--ArtyClick-Cool-Red);
 }
 
+.offer-box__contents:hover {
+  color: var(--ArtyClick-Cool-Red) !important;
+  background-color: #ffffffa7 !important;
+}
+
+.offer-box__contents:hover .offer-box-location > svg {
+  fill: var(--ArtyClick-Cool-Red);
+}
+
 .offer-box-location {
-  color: var(--White);
+  color: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;

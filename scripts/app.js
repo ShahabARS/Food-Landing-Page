@@ -9,7 +9,9 @@ const firstOfferBox = document.querySelector(".offer-box");
 const offerBoxPicture = document.querySelector(".offer-box__picture");
 const offerBoxTitle = document.querySelector(".offer-box__title");
 const offerBoxCaption = document.querySelector(".offer-box__caption");
-const offerBoxLocationText = document.querySelector(".offer-box-location__text");
+const offerBoxLocationText = document.querySelector(
+  ".offer-box-location__text"
+);
 
 // Toggle hamburger menu
 function toggleMenu() {
@@ -57,12 +59,21 @@ function responsiveScript() {
   if (width >= 320 && width <= 767) {
     if (!offerInterval) {
       offerInterval = setInterval(flipOfferBox, 6000);
+      console.log("not in mobile range *");
     }
+    console.log("in mobile range");
   } else {
     // Clear interval if not in mobile range
     if (offerInterval) {
       clearInterval(offerInterval);
       offerInterval = null;
+      console.log("in mobile range");
+    } else {
+      offerBoxPicture.src = "./images/pancake.jpg";
+      offerBoxTitle.textContent = "The Wonton";
+      offerBoxCaption.textContent =
+        " we are all about we are all about to the fullest and all content dining out orin! dining out or in!";
+      offerBoxLocationText.textContent = "Gachibowli";
     }
   }
 }
